@@ -84,21 +84,19 @@
 
 
 
-<meta name="description" content="实现效果最近在做的一个项目里面包含了扫码逻辑，因为之前公司的一些项目用的是旧的第三方框架，准确性和速度都与原生存在一定的差距，界面可变性局限大，维护成本高，不能忍😤，所以自己用原生API重写了一个扫码模块，Github具体代码可点击此处。官方的扫码API是在iOS8上推出的，如今系统迭代到了iOS10，iOS8以下系统的市场占有率已经可以忽略，并且APP适配现在也是从iOS8开始。
-先看最终的实">
+<meta name="description" content="实现动机&amp;amp;效果最近在做的一个项目里面包含了扫码逻辑，因为之前公司的一些项目用的是旧的第三方框架，准确性和速度都与原生存在一定的差距，界面可变性局限大，维护成本高，不能忍😤，所以自己用原生API重写了一个扫码模块，Github具体代码可点击此处。官方的扫码API是在iOS8上推出的，如今系统迭代到了iOS10，iOS8以下系统的市场占有率已经可以忽略，并且APP适配现在也是从iOS8开始。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS 8+ 原生API实现二维码扫描ViewController">
 <meta property="og:url" content="yuzhenbang.com/2016/12/17/二维码扫描ViewController/index.html">
 <meta property="og:site_name" content="Cosin.Jubal">
-<meta property="og:description" content="实现效果最近在做的一个项目里面包含了扫码逻辑，因为之前公司的一些项目用的是旧的第三方框架，准确性和速度都与原生存在一定的差距，界面可变性局限大，维护成本高，不能忍😤，所以自己用原生API重写了一个扫码模块，Github具体代码可点击此处。官方的扫码API是在iOS8上推出的，如今系统迭代到了iOS10，iOS8以下系统的市场占有率已经可以忽略，并且APP适配现在也是从iOS8开始。
-先看最终的实">
+<meta property="og:description" content="实现动机&amp;amp;效果最近在做的一个项目里面包含了扫码逻辑，因为之前公司的一些项目用的是旧的第三方框架，准确性和速度都与原生存在一定的差距，界面可变性局限大，维护成本高，不能忍😤，所以自己用原生API重写了一个扫码模块，Github具体代码可点击此处。官方的扫码API是在iOS8上推出的，如今系统迭代到了iOS10，iOS8以下系统的市场占有率已经可以忽略，并且APP适配现在也是从iOS8开始。">
 <meta property="og:image" content="http://oic275rsr.bkt.clouddn.com/2016121757403final.jpg">
+<meta property="og:image" content="http://oic275rsr.bkt.clouddn.com/2016121795986final2.jpg">
 <meta property="og:image" content="http://oic275rsr.bkt.clouddn.com/2016121772985scanDemo.gif">
-<meta property="og:updated_time" content="2016-12-17T15:34:15.000Z">
+<meta property="og:updated_time" content="2016-12-17T15:50:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS 8+ 原生API实现二维码扫描ViewController">
-<meta name="twitter:description" content="实现效果最近在做的一个项目里面包含了扫码逻辑，因为之前公司的一些项目用的是旧的第三方框架，准确性和速度都与原生存在一定的差距，界面可变性局限大，维护成本高，不能忍😤，所以自己用原生API重写了一个扫码模块，Github具体代码可点击此处。官方的扫码API是在iOS8上推出的，如今系统迭代到了iOS10，iOS8以下系统的市场占有率已经可以忽略，并且APP适配现在也是从iOS8开始。
-先看最终的实">
+<meta name="twitter:description" content="实现动机&amp;amp;效果最近在做的一个项目里面包含了扫码逻辑，因为之前公司的一些项目用的是旧的第三方框架，准确性和速度都与原生存在一定的差距，界面可变性局限大，维护成本高，不能忍😤，所以自己用原生API重写了一个扫码模块，Github具体代码可点击此处。官方的扫码API是在iOS8上推出的，如今系统迭代到了iOS10，iOS8以下系统的市场占有率已经可以忽略，并且APP适配现在也是从iOS8开始。">
 <meta name="twitter:image" content="http://oic275rsr.bkt.clouddn.com/2016121757403final.jpg">
 
 
@@ -327,9 +325,9 @@
       
 
       
-        <h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2><p>最近在做的一个项目里面包含了扫码逻辑，因为之前公司的一些项目用的是旧的第三方框架，准确性和速度都与原生存在一定的差距，界面可变性局限大，维护成本高，不能忍😤，所以自己用原生API重写了一个扫码模块，Github具体代码可<a href="https://github.com/zhenbang/JBScanViewController" target="_blank" rel="external">点击此处</a>。官方的扫码API是在iOS8上推出的，如今系统迭代到了iOS10，iOS8以下系统的市场占有率已经可以忽略，并且APP适配现在也是从iOS8开始。</p>
-<p>先看最终的实现效果：<br><img src="http://oic275rsr.bkt.clouddn.com/2016121757403final.jpg" alt="2016121757403final.jpg"><a id="more"></a><br>动画：<br><img src="http://oic275rsr.bkt.clouddn.com/2016121772985scanDemo.gif" alt="2016121772985scanDemo.gif"></p>
-
+        <h2 id="实现动机-amp-效果"><a href="#实现动机-amp-效果" class="headerlink" title="实现动机&amp;效果"></a>实现动机&amp;效果</h2><p>最近在做的一个项目里面包含了扫码逻辑，因为之前公司的一些项目用的是旧的第三方框架，准确性和速度都与原生存在一定的差距，界面可变性局限大，维护成本高，不能忍😤，所以自己用原生API重写了一个扫码模块，Github具体代码可<a href="https://github.com/zhenbang/JBScanViewController" target="_blank" rel="external">点击此处</a>。官方的扫码API是在iOS8上推出的，如今系统迭代到了iOS10，iOS8以下系统的市场占有率已经可以忽略，并且APP适配现在也是从iOS8开始。</p>
+<p>先看最终的实现效果：<br><img src="http://oic275rsr.bkt.clouddn.com/2016121757403final.jpg" alt="2016121757403final.jpg"><a id="more"></a><br><img src="http://oic275rsr.bkt.clouddn.com/2016121795986final2.jpg" alt="2016121795986final2.jpg"><br>动画：<br><img src="http://oic275rsr.bkt.clouddn.com/2016121772985scanDemo.gif" alt="2016121772985scanDemo.gif"></p>
+<h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2>
       
     </div>
 
@@ -486,7 +484,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#实现效果"><span class="nav-number">1.</span> <span class="nav-text">实现效果</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#实现动机-amp-效果"><span class="nav-number">1.</span> <span class="nav-text">实现动机&效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实现方法"><span class="nav-number">2.</span> <span class="nav-text">实现方法</span></a></li></ol></div>
             
 
           </div>
